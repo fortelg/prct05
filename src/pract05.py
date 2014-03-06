@@ -43,6 +43,7 @@ else:
 	print "Introduzca el numero de intervalos (n > 0):"
 	n = int (raw_input ());
 if (n > 0):
+	VALOR_PI = 3.14159265358979311599796346854418516
 	ini = 0
 	intervalo = 1.0 / float (n);
 	sumatorio = 0.0
@@ -55,6 +56,7 @@ if (n > 0):
 	valor_pi = sumatorio / n;
 	print "El valor aproximado de PI es:", valor_pi
 	print "El valor de PI con 35 decimales: %10.35f" % decimales_pi (35)
+	print "El valor de PI con 35 decimales mediante una constante: %10.35f" % VALOR_PI
 else:
 	print "El valor de los intervalos debe ser mayor que 0"
 
